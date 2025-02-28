@@ -30,7 +30,7 @@ I standardised my features and used PCA to reduce the dimensionality of the data
 
 I carried out PCA and K-means clustering both on the dataset as a whole and separately for players in each position. The reason for this is that by using players of all positions the clusters are likely to simply encode playing position, whereas creating clusters within a single position could provide insight into player attributes and tactical differences.
 
-In each case, I chose to use a number of principal components to explain 80% of the variation in the dataset. This resulted in reducing the dimensinality from 99 features to between 14 and 17 principal components. Using the ful dataset, I found that the silhouette score using the same number of clusters was higher when using the dataset with reduced dimensionality as this reduced a lot of the unecessary nouise.
+In each case, I chose to use a number of principal components to explain 80% of the variation in the dataset. This resulted in reducing the dimensinality from 99 features to between 14 and 17 principal components. Using the full dataset, I found that the silhouette score using the same number of clusters was higher when using the dataset with reduced dimensionality as this reduced a lot of the unecessary noise.
 
 ![image](https://github.com/user-attachments/assets/a3526fb1-06d0-45b7-bb88-540c5a869b95)
 
