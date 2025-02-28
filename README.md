@@ -20,7 +20,7 @@ I used individual player data from the 2024/25 Premier League season, collected 
 
 The data is taken after 25 matches of the season and all statistics are on a per 90 minutes basis.
 
-There were separate datasets on the following types of metrics: standard, shooting, possession, passing_types, passing, miscellaneous, goal creation, defensive.
+There were separate datasets on the following types of metrics: standard, shooting, possession, passing types, passing, miscellaneous, goal creation, defensive.
 
 I merged all of the individual datasets into one master dataset with 99 features.
 
