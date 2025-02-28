@@ -1,4 +1,4 @@
-# Speed Dating Classification Model
+# Premier League Player Clustering
 
 ## Overview
 
