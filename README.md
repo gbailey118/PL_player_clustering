@@ -2,9 +2,7 @@
 
 ## Overview
 
-This project involves building a classification model to predict the outcome of speed dating events. The model aims to classify whether two participants will have a successful match based on various features collected during the event.
-
-This is my first project that I've published to Github so my primary aim was to gain familiarity with a project workflow and to gain familiarity with techniques such as oversampling, cross-validation and hyperparameter tuning.
+This project uses Principal Component Analysis (PCA) and K-means clustering to split Premier League players into clusters based on their detailed playing statistics. I created clusters both within the overall player dataset and within smaller datasets of players from each outfield position.
 
 ## Table of Contents
 
@@ -28,9 +26,9 @@ I merged all of the individual datasets into one master dataset with 99 features
 
 ## Model Training
 
-I standardised my features and used principal component analysis (PCA) to reduce the dimensionality of the dataset. I then applied K-means clustering to split the players into clusters, using the elbow chart and silhouette score to inform the most appropriate number of clusters. 
+I standardised my features and used PCA to reduce the dimensionality of the dataset. I then applied K-means clustering to split the players into clusters, using the elbow chart and silhouette score to inform the most appropriate number of clusters. 
 
-I carried out PCA and K-means clustering both on the datset as a whole and separately for players in each position. The reason for this is that by using players of all positions the clusters are likely to simply encode playing position, whereas creating clusters within a single position could provide insight into player attributes and tactical differences.
+I carried out PCA and K-means clustering both on the dataset as a whole and separately for players in each position. The reason for this is that by using players of all positions the clusters are likely to simply encode playing position, whereas creating clusters within a single position could provide insight into player attributes and tactical differences.
 
 In each case, I chose to use a number of principal components to explain 80% of the variation in the dataset. This resulted in reducing the dimensinality from 99 features to between 14 and 17 principal components. Using the ful dataset, I found that the silhouette score using the same number of clusters was higher when using the dataset with reduced dimensionality as this reduced a lot of the unecessary nouise.
 
